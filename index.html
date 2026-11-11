@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PiusBeats Mobile Studio — professional recording, beat production, mixing and mastering in Zambia." />
+  <title>PiusBeats | Mobile Studio & Music Production</title>
+  <link rel="icon" href="assets/piusbeats-logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="PiusBeats home">
+      <img src="assets/piusbeats-logo.png" alt="PiusBeats logo" />
+      <span>Pius<span>Beats</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#beats">Beats</a>
+      <a href="#services">Services &amp; Pricing</a>
+      <a href="#policies">Studio Policies</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Book a session <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span>MOBILE STUDIO · PROFESSIONAL SOUND</p>
+        <h1>Your sound.<br /><span>Anywhere. Professionally.</span></h1>
+        <p class="hero-text">Professional in-the-box production, recording, mixing and mastering. We bring the studio setup to you.</p>
+        <div class="hero-actions">
+          <a class="button button-green" href="#services">View services &amp; prices <span>↗</span></a>
+          <a class="button button-outline" href="#contact">Book a session</a>
+        </div>
+        <div class="hero-note">
+          <span class="sound-bars"><i></i><i></i><i></i><i></i><i></i></span>
+          PROFESSIONAL SOUND. MOBILE CONVENIENCE.
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="PiusBeats brand artwork">
+        <div class="record record-one"></div>
+        <div class="record record-two"></div>
+        <div class="hero-logo-wrap"><img src="assets/piusbeats-logo.png" alt="PiusBeats music production" /></div>
+        <div class="floating-tag tag-top">CREATE <b>●</b></div>
+        <div class="floating-tag tag-bottom">YOUR SOUND. YOUR SPACE. ↗</div>
+      </div>
+      <a class="scroll-cue" href="#services">EXPLORE OUR SERVICES <span>↓</span></a>
+    </section>
+
+    <!-- BEATS SECTION -->
+    <section class="section beats-section" id="beats">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE SOUND LIBRARY</p><h2>Find your <span>next sound.</span></h2></div>
+        <p class="section-intro">Explore the beat collection. Preview tracks and find the sound that fits your vision.</p>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter beats">
+        <button class="filter active" data-filter="all">All beats</button>
+        <button class="filter" data-filter="hip-hop">Hip-hop</button>
+        <button class="filter" data-filter="afrobeats">Afrobeats</button>
+        <button class="filter" data-filter="rnb">R&amp;B</button>
+      </div>
+
+      <div class="beat-grid" id="beatGrid">
+        <article class="beat-card" data-genre="afrobeats">
+          <div class="beat-cover cover-green"><span>PB / 001</span><b>AFRO<br />FUSION</b><small>PIUSBEATS</small></div>
+          <div class="beat-info"><div><h3>Afro Fusion</h3><p>Afrobeats · make it yours</p></div><span class="bpm">104 BPM</span></div>
+          <div class="beat-actions">
+            <button class="play-button" data-audio="assets/audio/afro-fusion.mp3" aria-label="Play Afro Fusion">▶</button>
+            <span class="audio-status">Preview coming soon</span>
+            <button class="license-button" data-beat="Afro Fusion">License ↗</button>
+          </div>
+        </article>
+
+        <article class="beat-card" data-genre="hip-hop">
+          <div class="beat-cover cover-gold"><span>PB / 002</span><b>GOLDEN<br />HOUR</b><small>PIUSBEATS</small></div>
+          <div class="beat-info"><div><h3>Golden Hour</h3><p>Hip-hop · warm &amp; soulful</p></div><span class="bpm">92 BPM</span></div>
+          <div class="beat-actions">
+            <button class="play-button" data-audio="assets/audio/golden-hour.mp3" aria-label="Play Golden Hour">▶</button>
+            <span class="audio-status">Preview coming soon</span>
+            <button class="license-button" data-beat="Golden Hour">License ↗</button>
+          </div>
+        </article>
+
+        <article class="beat-card" data-genre="rnb">
+          <div class="beat-cover cover-cyan"><span>PB / 003</span><b>AFTER<br />DARK</b><small>PIUSBEATS</small></div>
+          <div class="beat-info"><div><h3>After Dark</h3><p>R&amp;B · smooth &amp; mellow</p></div><span class="bpm">78 BPM</span></div>
+          <div class="beat-actions">
+            <button class="play-button" data-audio="assets/audio/after-dark.mp3" aria-label="Play After Dark">▶</button>
+            <span class="audio-status">Preview coming soon</span>
+            <button class="license-button" data-beat="After Dark">License ↗</button>
+          </div>
+        </article>
+      </div>
+      <p class="demo-note">Sample catalogue entries. Actual beats, artwork and previews can be added as the collection grows.</p>
+    </section>
+
+    <!-- SERVICES AND PRICING -->
+    <section class="services-section" id="services">
+      <div class="section section-inner">
+        <div class="pricing-heading">
+          <p class="eyebrow">PIUSBEATS MOBILE STUDIO</p>
+          <h2>Professional sound.<br /><span>Clear, simple pricing.</span></h2>
+          <p class="pricing-intro">Professional in-the-box production, recording, mixing and mastering. Choose an individual service or get everything together with our Full Project package.</p>
+        </div>
+
+        <div class="service-grid pricing-grid">
+          <article class="service-card pricing-card">
+            <span class="service-number">01 / RECORDING</span><div class="service-icon">◉</div>
+            <h3>Recording Session</h3>
+            <p>Professional capture of vocals or live instruments. Our mobile setup brings recording equipment directly to your location.</p>
+            <div class="price-block"><strong>K250</strong><span>/ hour</span></div>
+            <a class="pricing-link" href="#contact" data-service="Recording Session">Book a recording session ↗</a>
+          </article>
+
+          <article class="service-card pricing-card">
+            <span class="service-number">02 / POST-PRODUCTION</span><div class="service-icon">⌁</div>
+            <h3>Mixing &amp; Mastering</h3>
+            <p>Industry-standard balancing, EQ, compression and final polish to prepare your music for release.</p>
+            <div class="price-block"><strong>K300</strong><span>/ track</span></div>
+            <a class="pricing-link" href="#contact" data-service="Mixing and mastering">Enquire about mixing ↗</a>
+          </article>
+
+          <article class="service-card pricing-card">
+            <span class="service-number">03 / BEAT PRODUCTION</span><div class="service-icon">♫</div>
+            <h3>Beat Lease</h3>
+            <p>Non-exclusive, high-quality in-the-box instrumentals ready for your vocals and creative direction.</p>
+            <div class="price-block"><strong>K300</strong><span>/ beat</span></div>
+            <a class="pricing-link" href="#contact" data-service="Beat licensing">Enquire about a beat ↗</a>
+          </article>
+        </div>
+
+        <article class="full-project-card">
+          <div class="package-content">
+            <p class="eyebrow">THE COMPLETE EXPERIENCE</p><h3>The Full Project</h3>
+            <p class="package-description">Everything you need to take your song from an instrumental to a finished, polished track.</p>
+            <ul class="package-includes">
+              <li><span>✓</span> 1 Non-Exclusive Beat</li><li><span>✓</span> Recording Session</li><li><span>✓</span> Full Mixing &amp; Mastering</li>
+            </ul>
+          </div>
+          <div class="package-price">
+            <span>PACKAGE PRICE</span><strong>K750</strong><small>/ project</small>
+            <a class="button button-green" href="#contact" data-service="Full Project package">Book the Full Project ↗</a>
+          </div>
+        </article>
+        <p class="pricing-footnote">All prices are in Zambian Kwacha (ZMW). Please enquire to confirm availability and discuss your project requirements.</p>
+      </div>
+    </section>
+
+    <!-- STUDIO POLICIES -->
+    <section class="policies-section" id="policies">
+      <div class="section policies-layout">
+        <div class="policies-intro">
+          <p class="eyebrow">BEFORE WE GET STARTED</p><h2>Studio policies.<br /><span>Good work starts here.</span></h2>
+          <p>A few simple guidelines help us work professionally, respect your time and deliver the best possible sound.</p>
+          <a class="button button-outline" href="#contact">Ask a question ↗</a>
+        </div>
+        <div class="policy-list">
+          <article class="policy-item"><span class="policy-number">01</span><div><h3>Deposits</h3><p>A 50% non-refundable deposit is required upfront to secure a recording date or to commence beat production and mixing. The remaining balance is due upon project completion.</p></div></article>
+          <article class="policy-item"><span class="policy-number">02</span><div><h3>File Delivery</h3><p>Final approved tracks are delivered digitally in high-quality WAV and MP3 formats. Track stems are available upon request.</p></div></article>
+          <article class="policy-item"><span class="policy-number">03</span><div><h3>Revisions</h3><p>Mixing and mastering services include 2 free rounds of revisions to ensure you are completely satisfied. Additional revisions will be billed at an hourly rate.</p></div></article>
+          <article class="policy-item"><span class="policy-number">04</span><div><h3>Mobile Setup</h3><p>As a mobile studio, we bring professional recording gear directly to your location. Please ensure the designated space is relatively quiet and free of heavy echoes for the best possible vocal and instrument capture.</p></div></article>
+          <article class="policy-item"><span class="policy-number">05</span><div><h3>Punctuality</h3><p>Billing for recording sessions begins exactly at the scheduled booking time. Please be ready at your agreed appointment time.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="about-mark">PB<span>.</span></div>
+      <div class="about-copy">
+        <p class="eyebrow">THE PIUSBEATS SOUND</p><h2>More than a beat.<br /><span>A whole feeling.</span></h2>
+        <p>PiusBeats is a mobile music production studio built around creativity, collaboration and professional sound. From recording vocals and producing beats to mixing and mastering, the goal is to help artists bring their musical ideas to life.</p>
+        <p>With a mobile setup, professional recording services can come directly to your location.</p>
+        <a class="text-link" href="#contact">Let's create something ↗</a>
+      </div>
+    </section>
+
+    <!-- BOOKING AND CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="section contact-layout">
+        <div>
+          <p class="eyebrow">BOOK YOUR NEXT SESSION</p>
+          <h2>Let's make<br /><span>some noise.</span></h2>
+          <p class="contact-lead">Choose a service, request a preferred date and time, and select how you would like to pay your deposit. PiusBeats will contact you to confirm availability and share payment instructions.</p>
+          <div class="contact-detail">
+            <span>EMAIL</span><a href="mailto:piusmumba66@gmail.com">piusmumba66@gmail.com</a>
+            <small>For booking, pricing and studio enquiries.</small>
+          </div>
+          <div class="booking-payment-note">
+            <h3>Available deposit methods</h3>
+            <div class="payment-method-tags"><span>MTN Money</span><span>Airtel Money</span><span>Bank Transfer</span></div>
+            <p>Payment details are provided by PiusBeats after your booking request and availability have been reviewed. Do not send a deposit before receiving confirmation and the correct payment instructions.</p>
+          </div>
+        </div>
+
+        <!-- FORMSPREE BOOKING FORM -->
+        <form class="contact-form booking-form" id="contactForm" action="https://formspree.io/f/xgakezwq" method="POST">
+          <div class="form-heading">
+            <p class="eyebrow">BOOKING REQUEST</p>
+            <h3>Tell us about your project</h3>
+            <p>Fields marked with * are required.</p>
+          </div>
+
+          <label>Your name *
+            <input name="name" type="text" placeholder="How should we call you?" required data-fs-field />
+          </label>
+
+          <label>Email address *
+            <input name="email" type="email" placeholder="you@example.com" required data-fs-field />
+          </label>
+
+          <label>What do you need? *
+            <select name="service" id="bookingService" required data-fs-field>
+              <option value="">Select a service</option>
+              <option value="Recording Session">Recording Session — K250/hr</option>
+              <option value="Mixing and mastering">Mixing &amp; Mastering — K300/track</option>
+              <option value="Beat licensing">Beat Lease (Non-Exclusive) — K300/beat</option>
+              <option value="Full Project package">The Full Project — K750/project</option>
+              <option value="Other enquiry">Other enquiry</option>
+            </select>
+          </label>
+
+          <div class="booking-row" id="quantityRow">
+            <label class="quantity-label" for="bookingQuantity">Number of hours *</label>
+            <input id="bookingQuantity" name="quantity" type="number" min="1" max="100" step="1" value="1" required data-fs-field />
+            <p class="field-help" id="quantityHelp">Recording is charged per hour.</p>
+          </div>
+
+          <div class="booking-row">
+            <label>Preferred date *
+              <input id="bookingDate" name="preferred_date" type="date" required data-fs-field />
+            </label>
+            <label>Preferred time *
+              <input name="preferred_time" type="time" required data-fs-field />
+            </label>
+          </div>
+
+          <label>Recording / project location
+            <input name="location" type="text" placeholder="Town, area or preferred studio location" data-fs-field />
+          </label>
+
+          <div class="estimate-card" aria-live="polite">
+            <div class="estimate-heading"><span>YOUR ESTIMATED COST</span><span class="estimate-badge">50% DEPOSIT</span></div>
+            <div class="estimate-line"><span>Estimated total</span><strong id="estimatedTotal">K250</strong></div>
+            <div class="estimate-line deposit-line"><span>Deposit required</span><strong id="estimatedDeposit">K125</strong></div>
+            <div class="estimate-line balance-line"><span>Remaining balance</span><strong id="estimatedBalance">K125</strong></div>
+            <p id="estimateNote">Estimate is based on 1 hour. Final amount is confirmed by PiusBeats.</p>
+          </div>
+
+          <fieldset class="payment-options">
+            <legend>Preferred deposit payment method *</legend>
+            <label class="payment-option"><input type="radio" name="payment_method" value="MTN Mobile Money" required data-fs-field /><span><strong>MTN Money</strong><small>Mobile money</small></span></label>
+            <label class="payment-option"><input type="radio" name="payment_method" value="Airtel Money" required data-fs-field /><span><strong>Airtel Money</strong><small>Mobile money</small></span></label>
+            <label class="payment-option"><input type="radio" name="payment_method" value="Bank Transfer" required data-fs-field /><span><strong>Bank Transfer</strong><small>Bank payment</small></span></label>
+          </fieldset>
+
+          <label>Project details / additional message *
+            <textarea name="message" rows="4" placeholder="Tell us about your song, number of tracks, beat preference, or any other requirements..." required data-fs-field></textarea>
+          </label>
+
+          <!-- These values are populated by JavaScript and included in the Formspree email. -->
+          <input type="hidden" name="estimated_total" id="formEstimatedTotal" value="K250" />
+          <input type="hidden" name="deposit_amount" id="formDepositAmount" value="K125" />
+          <input type="hidden" name="remaining_balance" id="formRemainingBalance" value="K125" />
+          <input type="hidden" name="currency" value="ZMW" />
+          <input type="hidden" name="booking_status" value="Pending review - not yet confirmed" />
+
+          <p class="deposit-disclaimer">A 50% non-refundable deposit is required to secure a recording date or commence production. Your request is not confirmed until PiusBeats checks availability and verifies the deposit.</p>
+
+          <button class="button button-green booking-submit" type="submit" data-fs-submit-btn>Send Booking Request ↗</button>
+
+          <div data-fs-success role="status" aria-live="polite">Thank you! Your booking request has been sent. PiusBeats will contact you to confirm availability and payment instructions.</div>
+          <div data-fs-error role="alert" aria-live="assertive">Sorry, something went wrong. Please try again or email piusmumba66@gmail.com.</div>
+          <p class="form-note" id="formNote">Your request will be sent securely through our booking form. No payment is taken on this website.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- PERSISTENT MUSIC PLAYER -->
+  <section class="music-player" id="musicPlayer" aria-label="Music player" hidden>
+    <audio id="audioPlayer" preload="metadata"></audio>
+    <div class="player-track">
+      <div class="player-art" id="playerArt">PB</div>
+      <div class="player-track-info"><strong id="playerTitle">Select a beat</strong><span id="playerArtist">PiusBeats</span></div>
+    </div>
+    <div class="player-main">
+      <div class="player-controls">
+        <button class="player-control" id="previousTrack" type="button" aria-label="Previous beat">|◀</button>
+        <button class="player-play" id="playerPlay" type="button" aria-label="Play">▶</button>
+        <button class="player-control" id="nextTrack" type="button" aria-label="Next beat">▶|</button>
+      </div>
+      <div class="player-timeline">
+        <span id="currentTime">0:00</span>
+        <input type="range" id="progressBar" min="0" max="100" value="0" step="0.1" aria-label="Track progress" />
+        <span id="totalDuration">0:00</span>
+      </div>
+    </div>
+    <div class="player-volume">
+      <span aria-hidden="true">♫</span>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.8" aria-label="Volume" />
+      <button class="player-close" id="closePlayer" type="button" aria-label="Close player">×</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="footer-brand" href="#home">Pius<span>Beats</span></a>
+    <p>Professional sound. Mobile convenience.</p>
+    <span>© <span id="year"></span> PiusBeats</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script>
+    window.formspree = window.formspree || function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+    formspree('initForm', {
+      formElement: '#contactForm',
+      formId: 'xgakezwq'
+    });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
